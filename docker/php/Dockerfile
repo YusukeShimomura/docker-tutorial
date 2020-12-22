@@ -17,3 +17,4 @@ ENV PATH $PATH:/composer/vendor/bin
 WORKDIR /var/www
 
 RUN composer global require "laravel/installer"
+RUN chmod -R 777 /var/www/laravel/storage/
